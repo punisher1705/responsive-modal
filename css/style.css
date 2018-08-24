@@ -1,0 +1,138 @@
+:root {
+	font-size: 16px;
+	font-family: 'Roboto', 'Raleway', sans-serif, system-UI;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.heading{
+	text-align: center; 
+	font-family: sans-serif;
+	background: #563d7c;
+	padding: 10px;
+	color: white;
+}
+.button {
+	padding-top: 2%;
+	border-radius: 10px;	  
+}
+button {
+	margin: auto; 
+	display: block;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 2%;
+	font-family: 'Roboto';
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: white; 
+}
+.modal {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding-top: 100px;
+	padding-bottom: 3%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);  
+}
+.modal-content {
+	border-radius: 10px;
+	position: relative;
+	width: 50%;
+	margin: auto; 
+	border: 1px solid #888;
+	text-align: center;
+	-webkit-animation-name: slideTop;
+	-webkit-animation-duration: .4s;
+	animation-name: slideTop;
+	animation-duration: .4s;   
+}
+.modal-header {
+	display: flex;
+	flex-direction: row;
+	background: #00acc1;
+	padding: 2%;
+	border-radius: 10px 10px 0 0;
+}
+h2	{
+	width: 80%;
+	color: white;
+}
+span {
+	width: 20%;
+	align-self: center;
+}
+i {	
+	color: white;
+	font-size: 1.5rem;
+}
+i:hover {
+	color: black;
+	font-size: 1.8rem; 
+}
+.modal-body {
+	background: white;
+	padding: 2%;
+	font-size: 1.3rem;
+	overflow: auto;
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 600;
+}
+.modal-footer {
+	background: #00acc1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*justify-content: center;*/
+	border-radius: 0 0 10px 10px;
+	padding: 2%;	
+}
+button#modal-open {
+	background: #007bff;
+}
+button#modal-open:hover {
+	background: white;
+	color: #007bff;
+}
+button#close {
+	background: #dc3545;	
+	width: 30%;
+}
+button#close:hover {
+	background: white;
+	color: #dc3545;
+}
+button#done {
+	background: #28a745;	
+	width: 30%;
+}
+button#done:hover {
+	background: white;
+	color: #28a745;
+}
+@-webkit-keyframes slideTop {
+	from {top:-300px; opacity: 0;}
+	to {top:0; opacity: 1}
+}
+@keyframes slideTop {
+	from {top:-300px; opacity: 0;}
+	to {top:0; opacity: 1}
+}
+@media screen and (max-width: 447px) {
+	button#close {
+		background: #dc3545;	
+		width: 70%;
+	}
+	button#done {
+		background: #28a745;	
+		width: 70%;
+	}	
+}
