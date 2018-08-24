@@ -44,6 +44,8 @@ button {
 	background-color: rgba(0,0,0,0.4);  
 }
 .modal-content {
+	display: flex;
+	flex-direction: column;
 	border-radius: 10px;
 	position: relative;
 	width: 50%;
@@ -127,6 +129,10 @@ button#done:hover {
 	to {top:0; opacity: 1}
 }
 @media screen and (max-width: 447px) {
+	.modal {
+		display: flex;
+		justify-content: center;
+	}
 	button#close {
 		background: #dc3545;	
 		width: 70%;
