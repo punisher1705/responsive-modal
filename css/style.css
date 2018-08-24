@@ -129,6 +129,9 @@ button#done:hover {
 	to {top:0; opacity: 1}
 }
 @media screen and (max-width: 447px) {
+	.modal-content {
+		width: 80%;
+	}
 	button#close {
 		background: #dc3545;	
 		width: 70%;
